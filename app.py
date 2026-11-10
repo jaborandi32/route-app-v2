@@ -32,7 +32,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # === 設定項目 ===
-API_KEY = "AIzaSyAfEHdBoGgIIiQ8AsSEvOwU-05I8A7qEEA"
+API_KEY = st.secrets["GOOGLE_API_KEY"]
 ORIGIN = "東京薬科大学, 八王子市"
 DESTINATION = "ひよこハウス豊田, 日野市"
 JST = timezone(timedelta(hours=+9), 'JST')
