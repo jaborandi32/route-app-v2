@@ -38,7 +38,7 @@ const ROUTE_A = [[35.638140, 139.388616], [35.655021, 139.378821]];
 const ROUTE_B = [[35.633740, 139.374954], [35.642243, 139.376011], [35.650988, 139.375014]];
 
 async function getRouteInfo(waypoints) {
-  const url = `https://routes.googleapis.com/directions/v2:computeRoutes?key=${API_KEY}&fields=routes.duration,routes.staticDuration`;
+  const url = `https://routes.googleapis.com/directions/v2:computeRoutes?key=${API_KEY}&$fields=routes.duration,routes.staticDuration`;
   const body = {
     origin: { address: ORIGIN },
     destination: { address: DESTINATION },
